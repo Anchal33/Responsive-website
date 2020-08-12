@@ -173,13 +173,13 @@ header{
   width:auto;
   margin-top: 20px;
 }
-/* .logo-black{
+.logo-black{
   display: none;
   float:left;
   height:50px;
   width:auto;
   margin: 5px 0;
-} */
+}
 
 .main-nav{
   float:right;
@@ -212,15 +212,16 @@ header{
   transform: translate(-50%,-50%);
 }
 /**STICKY NAVIGATION**/
-/* .sticky{
+.sticky{
   position: fixed;
   top:0;
   left:0;
   width: 100%;
   background-color: rgba(255,255,255,0.98);
   box-shadow: 0 2px 2px #f0f0f0;
+  z-index: 9999;
 }
-.main-nav{
+.sticky .main-nav{
 margin-top:18px;
 }
 
@@ -234,7 +235,19 @@ margin-top:18px;
 }
 .sticky .logo-black{
   display: block;
-} */
+}
+
+.mobile-nav-icon{
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i{
+  font-size: 200%;
+  color: #fff;
+}
 /*-------------------------------*/
 /*----MEALS----*/
 /*------------------------------*/
